@@ -1,0 +1,125 @@
+# Solitaire Solver
+
+A Python-based tool to automatically solve and play Microsoft Solitaire games.
+
+## Features
+
+- Reads Solitaire game state directly from memory
+- Uses A* search algorithm to find optimal solutions
+- Automatically executes moves through Windows message simulation
+- User-friendly GUI with real-time game state visualization
+
+## Requirements
+
+- Windows operating system
+- Microsoft Solitaire Collection game
+- Python 3.6+
+- Git (for cloning the repository)
+
+## Installation
+
+1. Clone the repository:
+
+   ```
+   git clone git@github.com:wrobbins0409/solitaire-solver.git
+   cd solitaire-solver
+   ```
+2. Set up a virtual environment:
+
+   ```
+   # Create a virtual environment
+   python -m venv venv
+
+   # Activate the virtual environment
+   # On Windows:
+   venv\Scripts\activate
+   # On macOS/Linux:
+   source venv/bin/activate
+   ```
+3. Install the required dependencies:
+
+   ```
+   pip install -r requirements.txt
+   ```
+4. Run the application using the simple launcher:
+
+   ```
+   python run.py
+   ```
+
+## Running provided .exe on windows
+
+To run the provided .exe simply double click it in windows file explorer
+
+**Hash Verification**
+
+To verify the integrity of the downloaded executable, check its SHA-256 hash:
+
+```
+SHA-256: 32a4bd3a31affe7da0df506ac123be51757412404db298e93378af579ef889ad
+```
+
+You can verify the hash of your downloaded executable using PowerShell:
+
+```
+Get-FileHash -Algorithm SHA256 .\dist\SolitaireSolver.exe
+```
+
+## Building the Executable
+
+To create a standalone executable of the Solitaire Solver:
+
+1. Clone the repository and set up a virtual environment as described in the Installation section:
+
+   ```
+   git clone git@github.com:wrobbins0409/solitaire-solver.git
+   cd solitaire-solver
+   python -m venv venv
+
+   # Activate the virtual environment
+   # On Windows:
+   venv\Scripts\activate
+   # On macOS/Linux:
+   source venv/bin/activate
+   ```
+2. Install the required dependencies:
+
+   ```
+   pip install -r requirements.txt
+   ```
+3. Run the build script:
+
+   ```
+   python build.py
+   ```
+
+   This will automatically install PyInstaller if it's not already installed.
+4. The executable will be created in the `dist` directory as `SolitaireSolver.exe`
+
+## Usage
+
+1. Start Microsoft Solitaire and begin a game
+2. Launch the Solitaire Solver application
+3. Click "Connect" to connect to the running Solitaire game
+4. Click "Solve Game" to find a solution
+5. Use "Step" or "Auto Execute" to play the solution automatically
+
+## Configuration Options
+
+- **Max Iterations**: Controls how many game states the solver will evaluate
+- **Solution Strategy**: Adjust between finding the best solution (higher quality) and finding a quick solution (faster)
+- **Delay**: Control the speed of automatic move execution
+
+## Project Structure
+
+This is a standalone application with a simple folder structure:
+
+- `src/core/` - Core solving algorithms and game state representation
+- `src/memory/` - Memory reading and interaction with Solitaire
+- `src/gui/` - User interface components
+- `src/dist/` - Provided and created .exe files
+- `assets/` - Application resources
+
+## License
+
+This project is for educational purposes only.

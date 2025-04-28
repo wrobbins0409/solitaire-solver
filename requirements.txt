@@ -1,0 +1,7 @@
+pymem>=1.9
+pywin32>=305
+tqdm>=4.66.0
+keyboard>=0.13.5
+dearpygui>=1.10.1
+Pillow>=9.0.0
+numpy>=1.22.0

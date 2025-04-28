@@ -1,0 +1,53 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv/
+.env/
+.virtualenv/
+
+# Distribution / packaging
+build/
+*.egg-info/
+*.egg
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Logs
+*.log
+logs/
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+.cache
+coverage.xml
+*.cover
+.hypothesis/
+
+# IDE specific files
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+.spyderproject
+.spyproject
+.ropeproject
+
+# Windows specific
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Project specific
+# Add any project-specific exclusions here
