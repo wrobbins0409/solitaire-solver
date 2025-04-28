@@ -49,7 +49,7 @@ A Python-based tool to automatically solve and play Microsoft Solitaire games.
 
 ## Running provided .exe on windows
 
-To run the provided .exe simply double click it in windows file explorer
+To run the provided [.exe](dist/SolitaireSolver.exe) simply double click it in windows file explorer
 
 **Hash Verification**
 
@@ -98,7 +98,7 @@ To create a standalone executable of the Solitaire Solver:
 
 ## Usage
 
-1. Start Microsoft Solitaire and begin a game
+1. Start [Microsoft Solitaire](dist/sol.exe) and begin a game
 2. Launch the Solitaire Solver application
 3. Click "Connect" to connect to the running Solitaire game
 4. Click "Solve Game" to find a solution
@@ -112,13 +112,27 @@ To create a standalone executable of the Solitaire Solver:
 
 ## Project Structure
 
-This is a standalone application with a simple folder structure:
+This is a standalone application with the following folder structure:
 
-- `src/core/` - Core solving algorithms and game state representation
-- `src/memory/` - Memory reading and interaction with Solitaire
-- `src/gui/` - User interface components
-- `src/dist/` - Provided and created .exe files
-- `assets/` - Application resources
+- **[src/](src/)** - Main source code
+  - **[src/main.py](src/main.py)** - Entry point for the application
+  - **[src/core/](src/core/)** - Core solving algorithms and game state representation
+    - **[src/core/game_state.py](src/core/game_state.py)** - Game state representation and manipulation
+    - **[src/core/solver.py](src/core/solver.py)** - A* search algorithm implementation
+    - **[src/core/solution.py](src/core/solution.py)** - Solution representation and management
+  - **[src/memory/](src/memory/)** - Memory reading and interaction with Solitaire
+    - **[src/memory/reader.py](src/memory/reader.py)** - Memory reading functionality
+    - **[src/memory/display.py](src/memory/display.py)** - Visualization of memory data
+    - **[src/memory/constants.py](src/memory/constants.py)** - Constants for memory offsets
+  - **[src/gui/](src/gui/)** - User interface components
+    - **[src/gui/app.py](src/gui/app.py)** - Main GUI application
+- **[dist/](dist/)** - Executable files
+  - **[dist/SolitaireSolver.exe](dist/SolitaireSolver.exe)** - Compiled executable
+- **[assets/](assets/)** - Application resources and images
+  - **[assets/solitaire.ico](assets/solitaire.ico)** - Application icon file
+- **[build.py](build.py)** - Script to build the executable
+- **[run.py](run.py)** - Simple launcher script
+- **[requirements.txt](requirements.txt)** - Python dependencies
 
 ## License
 
