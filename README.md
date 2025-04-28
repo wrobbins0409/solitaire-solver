@@ -56,7 +56,7 @@ To run the provided [.exe](dist/SolitaireSolver.exe) simply double click it in w
 To verify the integrity of the downloaded executable, check its SHA-256 hash:
 
 ```
-SHA-256: 32a4bd3a31affe7da0df506ac123be51757412404db298e93378af579ef889ad
+SHA-256: 76c98fc7e3dc012db14123594add3e18a3c91dc6daee788447e3faf4c335ca6b
 ```
 
 You can verify the hash of your downloaded executable using PowerShell:
@@ -99,6 +99,10 @@ To create a standalone executable of the Solitaire Solver:
 ## Usage
 
 1. Start [Microsoft Solitaire](dist/sol.exe) and begin a game
+
+   ```
+   SHA-256: 8886ac5c321011e9d1940af88790403c4d2f78a42458c56db033e694d0100d39
+   ```
 2. Launch the Solitaire Solver application
 3. Click "Connect" to connect to the running Solitaire game
 4. Click "Solve Game" to find a solution
