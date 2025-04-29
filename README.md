@@ -2,6 +2,10 @@
 
 A Python-based tool to automatically solve and play Microsoft Solitaire games.
 
+## Demo
+
+[Here](https://youtu.be/4NSqbirvrgg) is a short youtube demo.
+
 ## Features
 
 - Reads Solitaire game state directly from memory
