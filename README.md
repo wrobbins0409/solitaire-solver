@@ -1,6 +1,6 @@
 # Solitaire Solver
 
-A Python-based tool to automatically solve and play Microsoft Solitaire games.
+A Python-based tool to automatically solve and play the Classic Microsoft Solitaire for Windows XP. Currently only able to solve on draw one mode.
 
 ## Demo
 
@@ -141,6 +141,10 @@ This is a standalone application with the following folder structure:
 - **[build.py](build.py)** - Script to build the executable
 - **[run.py](run.py)** - Simple launcher script
 - **[requirements.txt](requirements.txt)** - Python dependencies
+
+## Future Developments
+
+Update to also be able to solve with draw 3 mode.
 
 ## License
 
